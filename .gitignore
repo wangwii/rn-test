@@ -1,0 +1,9 @@
+*swp
+.DS_Store
+.idea
+.gradle
+
+build
+node_modules
+docs
+tmp
