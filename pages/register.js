@@ -17,7 +17,7 @@ class Register extends React.Component {
             return;
         }
 
-        Router.Actions.home();
+        Router.Actions.main();
     }
 
     render(){

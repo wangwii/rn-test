@@ -6,8 +6,9 @@
     "start": "node node_modules/react-native/local-cli/cli.js start"
   },
   "dependencies": {
-    "lodash": "3.10.1",  
+    "lodash": "3.10.1",
     "react-native": "^0.18.0-rc",
-    "react-native-router-flux": "2.0.5"
+    "react-native-router-flux": "2.0.5",
+    "react-native-looped-carousel": "0.0.8"
   }
 }

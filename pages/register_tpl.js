@@ -1,18 +1,22 @@
 import React from 'react-native';
-import BaseStyles from '../styles/base';
 
 const { View, Text, TextInput } =  React;
 
 const styles = React.StyleSheet.create({
+    base: {
+        backgroundColor: '#DB0A5B'
+    },
     header: {
-        padding: 15,
-        textAlign: 'center',
+        margin: 15,
+        color: '#FFFFFF',
         fontWeight: '600',
         fontSize: 16
     },
     loginButton: {
+        color: '#FFFFFF',
         alignSelf: 'stretch',
         alignItems: 'center',
+        justifyContent: 'center',
         margin: 15,
         padding: 10,
         textAlign: 'center',
@@ -23,9 +27,12 @@ const styles = React.StyleSheet.create({
 export default (page)=> {
     return (
         <View>
-            <Text style={[BaseStyles.base, styles.header]}>
-                {page.props.title}
-            </Text>
+            <View style={[styles.base, {alignItems: 'center', justifyContent: 'center'}]}>
+                <Text style={styles.header}>
+                    {page.props.title}
+                </Text>
+            </View>
+
             <TextInput value={page.state.text} autoFocus={true} keyboardType='numeric'
                        placeholder='请输入手机号码'
                        onChangeText={(phone) => page.setState({phone})} />
@@ -33,7 +40,7 @@ export default (page)=> {
             <TextInput value='871029' keyboardType='numeric' placeholder='验证码'/>
 
             <Text numberOfLines={1} onPress={page.login}
-                style={[BaseStyles.base, styles.loginButton]}>
+                style={[styles.base, styles.loginButton]}>
                     登录
             </Text>
         </View>

@@ -1,10 +1,9 @@
 import React from 'react-native';
-import template from './home_tpl';
+import template from './designer_tpl';
 
-class Home extends React.Component {
+class Designer extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { search: '' };
     }
 
     render(){
@@ -12,4 +11,4 @@ class Home extends React.Component {
     }
 }
 
-export default Home;
+export default Designer;
