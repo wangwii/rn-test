@@ -22,7 +22,6 @@ export default class extends React.Component {
       return (
           <Router hideNavBar={true}>
               <Schema name="tab" type="switch" icon={TabIcon} />
-
               <Route name="register" component={Register} initial={true} title="用户登录"/>
               <Route name="main" type="replace">
                   <Router footer={TabBar} hideNavBar={true}>
